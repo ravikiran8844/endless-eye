@@ -1,7 +1,50 @@
-body {
-    color: #000;
+@font-face {
+    font-family: Alga;
+    src: url('assets/fonts/Alga-Light.otf') format('opentype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Alga;
+    src: url('assets/fonts/Alga-Medium.otf') format('opentype');
+    font-display: swap;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('assets/fonts/HelveticaNeue-Light.otf') format('opentype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('assets/fonts/HelveticaNeue-Medium.otf') format('opentype');
+    font-display: swap;
+    font-weight: 500;
 }
 
+@font-face {
+    font-family: Copperplate;
+    src: url('assets/fonts/Copperplate-Light.otf') format('opentype');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Copperplate;
+    src: url('assets/fonts/Copperplate.otf') format('opentype');
+    font-display: swap;
+    font-weight: 500;
+}
+body {
+    color: #000;
+    font-family: "Helvetica Neue";
+}
+.alga {
+    font-family: Alga;
+}
+.helvetica-neue{
+    font-family: "Helvetica Neue";
+}
 header {
     border-bottom: 1px solid #c4ae98;
     background: #f2ede4;
@@ -23,13 +66,14 @@ header {
         text-decoration: none;
         color: #000;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 14px;
+        font-family: Copperplate;
     }
 }
 
-/* main {
-    min-height: 100vh;
-} */
+main {
+    min-height: calc(100vh - 162px);
+}
 
 .home-collections {
     display: grid;
